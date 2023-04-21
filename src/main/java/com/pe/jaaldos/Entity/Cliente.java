@@ -20,31 +20,31 @@ public class Cliente implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "codcli")
-    public Long codigo;
+    private Long codigo;
 
     @Column(name = "nombrescli")
-    public String nombres;
+    private String nombres;
 
     @Column(name = "apellidoscli")
-    public String apellidos;
+    private String apellidos;
 
     @Column(name = "dnicli")
-    public String dni;
+    private String dni;
 
     @Column(name = "telcli")
-    public String telefono;
+    private String telefono;
 
     @Column(name = "correocli")
-    public String correo;
+    private String correo;
 
     @ManyToOne
     @JoinColumn(name = "codubi", nullable = false)
-    public Ubicacion ubicacion;
+    private Ubicacion ubicacion;
 
     @Column(name = "direccion")
-    public String direccion;
+    private String direccion;
 
     @Column(name = "estadocli")
-    public boolean estado;
+    private boolean estado;
 
 }

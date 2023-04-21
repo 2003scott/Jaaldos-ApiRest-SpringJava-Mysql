@@ -44,6 +44,8 @@ public class SalidaRestController {
         s.setCodigo(id);
         return salidaService.update(s);
     }
+    
+    
 
     @DeleteMapping("{id}")
     public Salida delete(@PathVariable Long id){

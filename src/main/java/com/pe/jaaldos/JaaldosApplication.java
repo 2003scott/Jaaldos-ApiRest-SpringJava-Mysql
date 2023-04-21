@@ -9,6 +9,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class JaaldosApplication {
 
+	/**
+	 * http://localhost:8090/jaaldos/swagger-ui/index.html
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		SpringApplication.run(JaaldosApplication.class, args);
 	}
